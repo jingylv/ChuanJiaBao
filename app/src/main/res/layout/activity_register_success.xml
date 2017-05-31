@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="zhongxinxintuo.chuanjiabao.activity.LoginActivity">
+
+    <include
+        android:id="@+id/register_success_title"
+        layout="@layout/login_titlebar" />
+
+    <include
+        android:id="@+id/register_success_logo"
+        layout="@layout/login_logo_citic_trust" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/success"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="恭喜您注册成功"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_register_success_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_login_login"
+        android:text="立即登录"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

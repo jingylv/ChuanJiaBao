@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="zhongxinxintuo.chuanjiabao.activity.LoginActivity">
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/login_titlebar" />
+
+    <include
+        android:id="@+id/login_logo"
+        layout="@layout/login_logo_citic_trust" />
+
+    <include
+        android:id="@+id/login_phone"
+        layout="@layout/login_phone_input" />
+
+    <include
+        android:id="@+id/login_password"
+        layout="@layout/login_password_input" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="忘记密码?"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_login_login"
+        android:text="登    录"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_login_register"
+        android:text="立即注册"
+        android:textColor="#ff0000"
+        android:textSize="20sp" />
+
+</LinearLayout>
